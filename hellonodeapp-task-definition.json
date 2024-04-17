@@ -1,25 +1,23 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/hellonodeapp-task-definition:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/hellonodeapp-task-definition:9",
     "containerDefinitions": [
         {
             "name": "hellonodeapp",
-            "image": "590184066699.dkr.ecr.us-east-1.amazonaws.com/hellonodeapp",
+            "image": "590184066699.dkr.ecr.us-east-1.amazonaws.com/hellonodeapp:0f5a99a0e1d23193605a38c18be2e3421f263162",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "hellonodeapp-5000-tcp",
-                    "containerPort": 5000,
-                    "hostPort": 5000,
+                    "name": "hellonodeapp-3000-tcp",
+                    "containerPort": 3000,
+                    "hostPort": 3000,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -37,7 +35,7 @@
     "taskRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 9,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,7 +81,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-04-17T13:39:10.528Z",
+    "registeredAt": "2024-04-17T20:41:51.149Z",
     "registeredBy": "arn:aws:iam::590184066699:root",
     "tags": []
 }
