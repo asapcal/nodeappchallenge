@@ -28,11 +28,11 @@ name: Deploy to Amazon ECS
 
 on:
   push:
-    branches: [ "deploy-to-ecs-fargate" ]
+    branches: [ "main" ]
 
 env:
-  AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: hellonodeapp           # set this to your Amazon ECR repository name
+  AWS_REGION: us-east-1                     # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: hellonodeapp              # set this to your Amazon ECR repository name
   ECS_SERVICE: hellonodeapp                 # set this to your Amazon ECS service name
   ECS_CLUSTER: hellonodeappdevcluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: hellonodeapp-task-definition # set this to the path to your Amazon ECS task definition
