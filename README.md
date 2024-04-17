@@ -1,3 +1,3 @@
 # hellonodeapp
 Node app hello world example pipeline
-![image](https://github.com/asapcal/hellonodeapp/assets/44505131/d537fd63-80ba-4fa4-8e29-8fad230737b9)
+![Design sem nome (2)](https://github.com/asapcal/hellonodeapp/assets/44505131/201a57a9-a00b-45a3-ac31-29f3189421b3)
