@@ -1,0 +1,10 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info
+/infra*
+# Module directory
+.terraform/
+
+# App
+node_modules
