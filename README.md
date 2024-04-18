@@ -41,8 +41,7 @@ Além disso, se as instâncias de contêiner foram lançadas com o **Amazon Linu
 **AWS Management Console:** é uma interface baseada em navegador que permite gerenciar recursos do ECS dentro dos recursos da AWS. Pode-se usar o console para visualizar métricas, logs e outras informações relevantes sobre seus contêineres e tarefas.
 
 Pode-se usar tambem o Prometheus e Grafana, precisamos fazer o seguinte:
-**Implantação do Prometheus**: Primeiro, você precisa implantar o **Prometheus** em seu cluster ECS. Você pode fazer isso criando um serviço ECS para executar o contêiner Prometheus.
-   - O Prometheus coletará métricas dos contêineres em execução no ECS, como uso de CPU, memória e outras estatísticas relevantes.
+**Implantação do Prometheus**: Primeiro, você precisa implantar o **Prometheus** em seu cluster ECS. Você pode fazer isso criando um serviço ECS para executar o contêiner Prometheus. O Prometheus coletará métricas dos contêineres em execução no ECS, como uso de CPU, memória e outras estatísticas relevantes.
 **Configuração de metas de coleta**: No arquivo de configuração do Prometheus, defina as metas de coleta para apontar para os endpoints dos contêineres ECS que você deseja monitorar. Isso geralmente envolve especificar os endereços IP e portas dos contêineres.
 **Implantação do Grafana**: Em seguida, implante o **Grafana** em outro serviço ECS ou em uma instância EC2 separada. O Grafana é uma ferramenta de visualização que permite criar painéis personalizados para exibir métricas coletadas pelo Prometheus.
 Configure o Grafana para se conectar ao Prometheus como uma fonte de dados.
@@ -60,7 +59,7 @@ Algumas Referencias:
 - https://spacelift.io/blog/terraform-ecs
 - https://medium.com/@olayinkasamuel44/using-terraform-and-fargate-to-create-amazons-ecs-e3308c1b9166
 - https://docs.aws.amazon.com/pt_br/AmazonECS/latest/developerguide/monitoring-automated-manual.html
-- Site24x7. https://www.site24x7.com/pt/amazon-ecs-monitoring.html
+- https://www.site24x7.com/pt/amazon-ecs-monitoring.html
 - https://blog.betrybe.com/tecnologia/ecs-amazon-como-funciona/
 - https://docs.aws.amazon.com/pt_br/AmazonECS/latest/developerguide/ecs_monitoring.html
 docs.aws.amazon.com. https://docs.aws.amazon.com/pt_br/AmazonECS/latest/userguide/ecs_monitoring.html
