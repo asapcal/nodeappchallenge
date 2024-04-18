@@ -1,4 +1,4 @@
-# Node app pipeline #
+# Nodeapp pipeline CICD AWS test #
 ![image](https://github.com/asapcal/hellonodeapp/assets/44505131/d57558ab-4918-46a6-bfbe-3d7176cba87e)
 
 **1 - Arquitetura AWS**
