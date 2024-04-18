@@ -1,25 +1,23 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/hellonodeapp-task-definition:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/hellonodeapp-task-definition:17",
     "containerDefinitions": [
         {
             "name": "hellonodeapp",
-            "image": "590184066699.dkr.ecr.us-east-1.amazonaws.com/hellonodeapp",
+            "image": "590184066699.dkr.ecr.us-east-1.amazonaws.com/hellonodeapp:d3a074e5bc0ecd675444333d0181c49624026581",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "hellonodeapp-5000-tcp",
-                    "containerPort": 5000,
-                    "hostPort": 5000,
+                    "name": "hellonodeapp-3000-tcp",
+                    "containerPort": 3000,
+                    "hostPort": 3000,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -27,8 +25,7 @@
                     "awslogs-group": "/ecs/hellonodeapp-task-definition",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -37,7 +34,7 @@
     "taskRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 17,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -83,7 +80,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-04-17T13:39:10.528Z",
-    "registeredBy": "arn:aws:iam::590184066699:root",
+    "registeredAt": "2024-04-18T15:09:50.515Z",
+    "registeredBy": "arn:aws:iam::590184066699:user/asap",
     "tags": []
 }
