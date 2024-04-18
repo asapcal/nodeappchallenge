@@ -49,9 +49,7 @@ Configure o Grafana para se conectar ao Prometheus como uma fonte de dados.
 **Configuração de alertas**: O Grafana também permite configurar alertas com base nas métricas coletadas. Por exemplo, você pode definir alertas para notificá-lo por email ou Slack quando a utilização de CPU ou memória ultrapassar um limite específico.
 **Teste e otimização contínuos**: Após a configuração inicial, teste o monitoramento para garantir que as métricas estejam sendo coletadas corretamente e que os alertas estejam funcionando conforme esperado. Faça ajustes conforme necessário para otimizar o desempenho e a eficácia do monitoramento.
 
-Lembre-se de que a configuração específica pode variar com base na sua arquitetura e requisitos. Consulte a documentação oficial do Prometheus e do Grafana para obter detalhes específicos sobre a implantação e configuração dessas ferramentas no ECS. 🚀
-
-Precisamos lembrar de escolher a ferramenta que melhor atenda às necessidades específicas do app e automatizar o máximo possível para facilitar o monitoramento contínuo do aplicativo no ECS. 🚀
+A configuração pode variar com base na sua arquitetura e nos requisitos. Precisaremos escolher a ferramenta que melhor atenda às necessidades específicas do app e automatizar o máximo possível para facilitar o monitoramento contínuo do app no ECS. 🚀
 
 
 Algumas Referencias:
