@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/app:4",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/app:7",
     "containerDefinitions": [
         {
             "name": "app",
@@ -18,7 +18,7 @@
     "taskRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 4,
+    "revision": 7,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -48,7 +48,7 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "registeredAt": "2024-04-24T16:05:19.250Z",
+    "registeredAt": "2024-04-24T16:22:26.691Z",
     "registeredBy": "arn:aws:iam::590184066699:user/asap",
     "tags": []
 }
