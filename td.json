@@ -1,54 +1,29 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/hellonodeapp-task-definition:17",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:590184066699:task-definition/app:4",
     "containerDefinitions": [
         {
-            "name": "hellonodeapp",
-            "image": "590184066699.dkr.ecr.us-east-1.amazonaws.com/hellonodeapp:d3a074e5bc0ecd675444333d0181c49624026581",
-            "cpu": 0,
-            "portMappings": [
-                {
-                    "name": "hellonodeapp-3000-tcp",
-                    "containerPort": 3000,
-                    "hostPort": 3000,
-                    "protocol": "tcp",
-                    "appProtocol": "http"
-                }
-            ],
+            "name": "app",
+            "image": "590184066699.dkr.ecr.us-east-1.amazonaws.com/app_repo",
+            "cpu": 256,
+            "memory": 512,
+            "portMappings": [],
             "essential": true,
             "environment": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/hellonodeapp-task-definition",
-                    "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "ecs"
-                }
-            },
             "systemControls": []
         }
     ],
-    "family": "hellonodeapp-task-definition",
+    "family": "app",
     "taskRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::590184066699:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 17,
+    "revision": 4,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
-            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-        },
-        {
-            "name": "ecs.capability.execution-role-awslogs"
-        },
-        {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
         },
         {
             "name": "com.amazonaws.ecs.capability.task-iam-role"
@@ -61,9 +36,6 @@
         },
         {
             "name": "ecs.capability.task-eni"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
         }
     ],
     "placementConstraints": [],
@@ -74,13 +46,9 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "1024",
-    "memory": "3072",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    },
-    "registeredAt": "2024-04-18T15:09:50.515Z",
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2024-04-24T16:05:19.250Z",
     "registeredBy": "arn:aws:iam::590184066699:user/asap",
     "tags": []
 }
