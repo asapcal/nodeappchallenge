@@ -100,7 +100,7 @@ Algumas Referencias:
 - https://www.site24x7.com/pt/amazon-ecs-monitoring.html
 - https://blog.betrybe.com/tecnologia/ecs-amazon-como-funciona/
 - https://docs.aws.amazon.com/pt_br/AmazonECS/latest/developerguide/ecs_monitoring.html
-- docs.aws.amazon.com.
+- https://docs.aws.amazon.com
 - https://docs.aws.amazon.com/pt_br/AmazonECS/latest/userguide/ecs_monitoring.html
 
 e outros..
